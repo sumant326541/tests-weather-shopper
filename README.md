@@ -10,45 +10,47 @@ Open project directory in terminal and run command to install all plugins and de
 ```sh
 npm install 
 ```
-Run all spec 
+To run all spec 
 ```sh
 npx cypress run
 or
 node_modules/.bin/cypress run
 ```
-Run specific spec 
+To run specific spec 
 ```sh
 npx cypress run --spec "/path/.cy.js"
 ```
-Run test on chrome browser
+To run test on chrome browser
 ```sh
 npx cypress run --browser chrome
 ```
 
-Run test on firefox browser
+To run test on firefox browser
 ```sh
 npx cypress run --browser firefox
 ```
-Run test on cypress runner
+To run test on cypress runner 
 open cypress runner with below command.
 ```sh
 npx cypress open
 ```
-Tap on specific test.cy.js file to be executed.
+Then open specific test.cy.js file to be executed.
 
 ## CI integration
 
-- push.yml file has been added to execute test on every push
+Note: CI code has been implemented in push.yml file to execute the test whenever new push will be on master branch.
 
 ## Report 
+Note:
+- The report automatically generates when test runs through cypress runner.
 
-- report will automatic generate once run through cypress runner 
-
-- we can also configure external report. Kindly go through https://docs.cypress.io/guides/tooling/reporters
+- You can also configure external report. To learn how to configure the test report, kindly go through the link https://docs.cypress.io/guides/tooling/reporters
 
 ### Screen Recording
-Screen recording will be generated in the videos folder once run test by command npx cypress run
-
+Screen recording is generated in the videos folder, when test is run using below command.
+```sh
+npx cypress run
+```
 ### ScreenShot
 Screenshot of failed steps will be generated in the screenshots folder.
 
@@ -56,7 +58,7 @@ Screenshot of failed steps will be generated in the screenshots folder.
 ## Framework overview:
 
 ### TestCase:
-- Test case has been written inder e2e directory
+- Test case has been written under e2e directory
 
 ### Custom command / reusability
 - Created a commands.js file inside the support directory, and maintained all reusable functions.
@@ -64,7 +66,7 @@ Screenshot of failed steps will be generated in the screenshots folder.
 ### Override config propery value
 - default value of Config parameter can be overriden  by updating value in cypress.config.js file.
 ### Test data
-- test data can be  maintained inside fixture folder.
+- test data can be maintained inside fixture folder.
 ### Plugin
 - external supported plugging can be added in index.js file present in plugins folder
 
