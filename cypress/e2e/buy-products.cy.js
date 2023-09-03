@@ -1,6 +1,4 @@
 /// <reference types ="Cypress"/>
-var i = 0;
-for (i = 0; i < 40; i++) {
   describe('Shop for moisturizers or suncreens based on temprature', () => {
     beforeEach(() => {
       cy.visit('http://weathershopper.pythonanywhere.com/');
@@ -54,4 +52,3 @@ for (i = 0; i < 40; i++) {
     })
 
   })
-}

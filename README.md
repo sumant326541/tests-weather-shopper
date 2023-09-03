@@ -65,4 +65,4 @@ Screenshot of failed steps will be generated in the screenshots folder.
 
 
 ### Note:
-- some times expected products SPF-50, SPF-30, Aloe or Almond not available and requrement is not clear how to handle scenario in this case that may cause to fail the test case.(observed in 1% of test execution)
+- some time expected products SPF-50, SPF-30, Aloe or Almond will not available and requrement is not clear how to handle this scenario and that may cause to fail the test case.(observed in 1% of test execution)
