@@ -1,6 +1,6 @@
 <img width="100" alt="Screenshot 2021-06-29 at 8 12 27 AM" src="https://user-images.githubusercontent.com/39675511/123728969-d2a87b00-d8b1-11eb-9ece-558d4021f816.png">
 
-# tests-wrather-shopper with Cypress
+# tests-weather-shopper with Cypress
 
 ## Test Execution
 
@@ -41,7 +41,6 @@ Tap on specific test.cy.js file to be executed.
 
 - we can also configure external report. Kindly go through https://docs.cypress.io/guides/tooling/reporters
 
-```
 ### Screen Recording
 Screen recording will be generated in the videos folder once run test by command npx cypress run
 
@@ -64,3 +63,6 @@ Screenshot of failed steps will be generated in the screenshots folder.
 ### Plugin
 - external supported plugging can be added in index.js file present in plugins folder
 
+
+### Note:
+- some times expected products SPF-50, SPF-30, Aloe or Almond not available and requrement is not clear how to handle scenario in this case that may cause to fail the test case.(observed in 1% of test execution)
