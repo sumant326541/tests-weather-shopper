@@ -35,6 +35,11 @@ open cypress runner with below command.
 npx cypress open
 ```
 Tap on specific test.cy.js file to be executed.
+
+## CI integration
+
+- push.yml file has been added to execute test on every push
+
 ## Report 
 
 - report will automatic generate once run through cypress runner 
