@@ -41,7 +41,6 @@ Tap on specific test.cy.js file to be executed.
 
 - we can also configure external report. Kindly go through https://docs.cypress.io/guides/tooling/reporters
 
-```
 ### Screen Recording
 Screen recording will be generated in the videos folder once run test by command npx cypress run
 
