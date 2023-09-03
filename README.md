@@ -64,3 +64,6 @@ Screenshot of failed steps will be generated in the screenshots folder.
 ### Plugin
 - external supported plugging can be added in index.js file present in plugins folder
 
+
+### Note:
+- some times expected products SPF-50, SPF-30, Aloe or Almond not available and requrement is not clear how to handle scenario in this case that may cause to fail the test case.(observed in 1% of test execution)
