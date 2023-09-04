@@ -7,6 +7,9 @@
 ####  Docker container execution
 #### Steps:
 - start docker engine.
+```sh
+open -a Docker
+```
 - clone source code from git https://github.com/sumant326541/WestWingAutomation.git
 - run the below command from root directory.
 ```sh
