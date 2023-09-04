@@ -32,15 +32,15 @@ Cypress.Commands.add('addProductToCart', (product) => {
     cy.get('iframe').then($iframe => {
       const $body = $iframe.contents().find('body')
       cy.wrap($body).find('#email').type('test@gmail.com');
-      cy.wait(2000)
+      cy.wait(1000)
       cy.wrap($body).find('.cardNumberInput').type('4242424242424242');
-      cy.wait(2000)
+      cy.wait(1000)
       cy.wrap($body).find('#cc-exp').type('02');
       cy.wrap($body).find('#cc-exp').type('28');
       cy.wrap($body).find('.cardCVCInput').type('314');
       cy.wrap($body).find('.zipCodeInput').type('13581');
       cy.wrap($body).find('.iconTick').click();
-      cy.wait(2000)
+      cy.wait(1000)
     })
   
   })
