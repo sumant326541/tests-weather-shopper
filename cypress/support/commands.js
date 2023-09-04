@@ -40,6 +40,7 @@ Cypress.Commands.add('addProductToCart', (product) => {
       cy.wrap($body).find('.cardCVCInput').type('314');
       cy.wrap($body).find('.zipCodeInput').type('13581');
       cy.wrap($body).find('.iconTick').click();
+      cy.wait(2000)
     })
   
   })
