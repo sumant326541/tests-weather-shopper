@@ -4,6 +4,31 @@
 
 ## Test Execution
 
+####  Docker container execution
+#### Steps:
+- start docker engine.
+- clone source code from git https://github.com/sumant326541/WestWingAutomation.git
+- run the below command from root directory.
+```sh
+docker run -it -v $PWD:/e2e -w /e2e cypress/included:12.8.1 --browser chrome
+```
+or use below command: script has been added in package.json
+```sh
+npm run docker-tests
+```
+The above command will run the test case in headless chrome.
+#### Explanation of the "docker run" command line arguments:
+```sh
+-it                  = interactive terminal
+ -v $PWD:/e2e         = map current folder to /e2e inside the container
+ -w /e2e              = set working directory to /e2e
+ cypress/includes = run "cypress" command
+    with arguments AFTER Docker image name
+    In our case they are "--project ." to point globally installed Cypress.
+    at the current working directory /e2e inside the container.
+```
+
+
 ####  Local execution
 
 Open project directory in terminal and run command to install all plugins and dependencies mentioned in package.json file.

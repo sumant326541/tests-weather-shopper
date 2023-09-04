@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-tests":"cypress run --headed --browser chrome"
+    "cypress-tests":"cypress run --headed --browser chrome",
+    "docker-tests":"docker run -it -v $PWD:/e2e -w /e2e cypress/included:12.8.1 --browser chrome"
   },
   "author": "Sumant Kumar",
   "license": "ISC",
