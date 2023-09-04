@@ -10,7 +10,7 @@
 ```sh
 open -a Docker
 ```
-- clone source code from git https://github.com/sumant326541/WestWingAutomation.git
+- clone source code from git https://github.com/sumant326541/tests-weather-shopper.git
 - run the below command from root directory.
 ```sh
 docker run -it -v $PWD:/e2e -w /e2e cypress/included:12.8.1 --browser chrome
